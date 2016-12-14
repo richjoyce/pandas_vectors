@@ -1,5 +1,4 @@
 import collections
-import numpy as np
 
 _vector_lists = dict(
     xyz=['_x', '_y', '_z'],
@@ -189,6 +188,8 @@ def matrix_mult(df, vectors, suffix, matrix, stack_ones=True):
 
     Returns the modified df as a copy of the original
     """
+    import numpy as np
+
     df = df.copy()
     vectors = _vector_to_list(vectors)
     for vector in vectors:
@@ -233,6 +234,7 @@ def diff(df, vectors, suffix='_diff', shift=1):
 
 def _magnitude(df, vector):
     """ Return the magnitude of the vector """
+    import numpy as np
     return np.sqrt(np.square(slice(df, vector)).sum(axis=1))
 
 
