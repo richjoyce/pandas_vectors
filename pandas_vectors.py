@@ -90,7 +90,7 @@ def rename(df, vectors, new):
     return df.rename(columns=dict(zip(old, new)))
 
 
-def copy(df, vector, new):
+def copy(df, vectors, new):
     """ Copy vectors to new names. List of vectors maps to new one-to-one. """
     vectors = _vector_to_list(vectors)
     new = _vector_to_list(new)
