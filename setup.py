@@ -6,7 +6,7 @@ with open('README.rst') as f:
 
 setup(
     name='pandas_vectors',
-    version='0.1',
+    version='0.1.1',
     description='convenience functions for dealing with vectors in panda dataframes',
     long_description=readme,
     author='Richard Joyce',

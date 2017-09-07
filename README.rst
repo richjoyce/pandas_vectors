@@ -65,3 +65,10 @@ Installation
 .. code:: bash
 
   $ pip install pandas-vectors
+
+
+CHANGELOG
+---------
+
+*0.1.1* Bugfix on function/variable
+*0.1* Initial Release
